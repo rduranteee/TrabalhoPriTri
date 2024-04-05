@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rig;
-    [SerializeField] private int speed;
-    public int jumpForce;
+    [SerializeField] [Range(1, 50)] private int speed;
+    [Range (1, 50)]public int jumpForce;
     bool PodePular = true;
     bool puloduplo;
 
